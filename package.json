@@ -1,5 +1,5 @@
 {
-  "name": "astra-types",
+  "name": "@astrapictures/types",
   "version": "1.0.0",
   "main": "src/index.ts",
   "repository": "https://github.com/astra-pictures-ltd/astra-types.git",
