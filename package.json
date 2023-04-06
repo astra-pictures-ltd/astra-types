@@ -1,0 +1,16 @@
+{
+  "name": "astra-types",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/astra-pictures-ltd/astra-types.git",
+  "author": "Paschal Ezeugwu <ezeugwupaschal@gmail.com>",
+  "dependencies": {
+    "@tsed/mongoose": "^7.20.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  },
+  "scripts": {
+    "build": "yarn tsc"
+  }
+}
