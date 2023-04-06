@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
+    "paths": {
+      "types/*": ["types/*"]
+    },
     "outDir": "./dist",
     "target": "ES5",
     "lib": [
@@ -21,7 +24,4 @@
     "dist",
     "test"
   ],
-  "paths": {
-    "types": ["src/types/*"]
-  },
 }
