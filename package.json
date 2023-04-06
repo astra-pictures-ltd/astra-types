@@ -1,7 +1,7 @@
 {
   "name": "@astrapictures/types",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/index.ts",
   "repository": "https://github.com/astra-pictures-ltd/astra-types.git",
   "author": "Paschal Ezeugwu <ezeugwupaschal@gmail.com>",
   "dependencies": {
