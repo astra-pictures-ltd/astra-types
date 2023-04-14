@@ -17,7 +17,6 @@ export enum ContentCrew {
 export enum ContentType {
   MOVIE = 'movie',
   TVSHOW = 'tv_show',
-  COMING_SOON = 'coming_soon',
 }
 
 export enum ContentStatus {
