@@ -74,6 +74,7 @@ export type ContentList = {
   id: string
   title: string
   tags: string[]
+  excerpt?: string
   access: ContentAccess
   thumbnail?: UploadedItem
 }
