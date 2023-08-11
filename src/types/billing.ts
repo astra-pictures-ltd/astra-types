@@ -148,3 +148,11 @@ export interface InitializeTransaction {
   amount?: number
   reference: string
 }
+
+export type UserSubscription = {
+  plan: string
+  amount: string
+  cancelledAt: Date
+  nextPaymentDate: Date
+  lastPaymentDate: Date
+}
