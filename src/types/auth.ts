@@ -6,6 +6,13 @@ export type JWTData = {
   expiry: Date
 }
 
+export type AuthVerify = {
+  code: string
+  hash: string
+  email: string
+  message: string
+}
+
 export type AuthUser = {
   id: string
   email: string
