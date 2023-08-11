@@ -2,7 +2,7 @@ import { UserSubscription } from "./billing"
 import { ContentList, Genre } from "./content"
 
 export type JWTData = {
-  token: string
+  value: string
   expiry: Date
 }
 
