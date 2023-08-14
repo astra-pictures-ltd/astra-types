@@ -151,7 +151,7 @@ export interface InitializeTransaction {
 
 export type UserSubscription = {
   plan: string
-  amount: string
+  amount: string | number
   cancelledAt: Date
   nextPaymentDate: Date
   lastPaymentDate: Date
