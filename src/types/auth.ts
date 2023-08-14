@@ -22,7 +22,7 @@ export type AuthUser = {
   lastName?: string
   last_name?: string
   firstName?: string
-  avatarUrl?: string
+  avatar?: string
   inviteLink?: string
   first_name?: string
 }
