@@ -27,17 +27,17 @@ export type AuthUser = {
   first_name?: string
 }
 
-export type FeaturedContents = Partial<{
-  top: ContentList
-  main: ContentList
-  cinema: ContentList
-  trending: ContentList
+export type AuthFeaturedContents = Partial<{
+  top: ContentList[]
+  main: ContentList[]
+  cinema: ContentList[]
+  trending: ContentList[]
 }>
 
 export type AuthData = {
   genre: Genre[]
   user: AuthUser
   token?: JWTData
-  contents: FeaturedContents
+  contents: AuthFeaturedContents
   subscription: UserSubscription
 }
