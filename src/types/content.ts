@@ -67,6 +67,7 @@ export interface FeaturedContent extends ContentList {
   numberOfSeasons?: string
   year?: string | number
   rating?: string
+  duration?: string
   isInWatchList?: boolean
 }
 
