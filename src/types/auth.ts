@@ -1,5 +1,5 @@
 import { UserSubscription } from "./billing"
-import { ContentList, Genre } from "./content"
+import { ContentList, FeaturedContent, Genre } from "./content"
 
 export type JWTData = {
   value: string
@@ -28,10 +28,10 @@ export type AuthUser = {
 }
 
 export type AuthFeaturedContents = Partial<{
-  top: ContentList[]
-  main: ContentList[]
-  cinema: ContentList[]
-  trending: ContentList[]
+  top: (ContentList | FeaturedContent) []
+  main: (ContentList[] | FeaturedContent) []
+  cinema: (ContentList[] | FeaturedContent) []
+  trending: (ContentList[] | FeaturedContent) []
 }>
 
 export type AuthData = {

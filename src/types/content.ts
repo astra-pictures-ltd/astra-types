@@ -59,7 +59,7 @@ export interface BaseContent {
   duration: ContentDuration | string
 }
 
-export interface FeaturedContent extends BaseContent {
+export interface FeaturedContent {
   logo?: UploadedItem
   thumbnail_horizontal?: UploadedItem
   thumbnail_vertical?: UploadedItem
