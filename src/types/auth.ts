@@ -28,10 +28,10 @@ export type AuthUser = {
 }
 
 export type AuthFeaturedContents = Partial<{
-  top: (ContentList | FeaturedContent) []
-  main: (ContentList | FeaturedContent) []
-  cinema: (ContentList | FeaturedContent) []
-  trending: (ContentList | FeaturedContent) []
+  top: FeaturedContent[]
+  main: FeaturedContent[]
+  cinema: FeaturedContent[]
+  trending: FeaturedContent[]
 }>
 
 export type AuthData = {
