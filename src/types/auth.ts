@@ -29,9 +29,9 @@ export type AuthUser = {
 
 export type AuthFeaturedContents = Partial<{
   top: (ContentList | FeaturedContent) []
-  main: (ContentList[] | FeaturedContent) []
-  cinema: (ContentList[] | FeaturedContent) []
-  trending: (ContentList[] | FeaturedContent) []
+  main: (ContentList | FeaturedContent) []
+  cinema: (ContentList | FeaturedContent) []
+  trending: (ContentList | FeaturedContent) []
 }>
 
 export type AuthData = {
