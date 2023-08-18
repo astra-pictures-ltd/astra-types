@@ -17,7 +17,7 @@ export enum UserListVariant {
 
 export type UserList = {
   title: string
-  contentId: string
+  id: string
   type?: UserListVariant
   thumbnail: UploadedItem
 }

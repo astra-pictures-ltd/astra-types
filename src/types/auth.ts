@@ -1,5 +1,5 @@
 import { UserSubscription } from "./billing"
-import { ContentList, FeaturedContent, Genre } from "./content"
+import { FeaturedContent, Genre } from "./content"
 
 export type JWTData = {
   value: string
