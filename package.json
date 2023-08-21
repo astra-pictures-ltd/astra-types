@@ -1,10 +1,10 @@
 {
   "name": "@astrapictures/types",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/astra-pictures-ltd/astra-types.git"
+    "url": "https://github.com/astra-pictures-ltd/astra-types.git"
   },
   "author": "Astra TV <developer@astratvafrica.com>",
   "scripts": {
