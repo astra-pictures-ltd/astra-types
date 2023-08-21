@@ -1,7 +1,7 @@
 {
   "name": "@astrapictures/types",
-  "version": "1.0.6",
-  "main": "index.ts",
+  "version": "1.0.7",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/astra-pictures-ltd/astra-types.git"
