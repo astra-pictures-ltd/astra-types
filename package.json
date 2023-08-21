@@ -2,8 +2,11 @@
   "name": "@astrapictures/types",
   "version": "1.0.6",
   "main": "index.ts",
-  "repository": "https://github.com/astra-pictures-ltd/astra-types.git",
-  "author": "Paschal Ezeugwu <ezeugwupaschal@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astra-pictures-ltd/astra-types.git"
+  },
+  "author": "Astra TV <developer@astratvafrica.com>",
   "scripts": {
     "build": "yarn tsc"
   },
@@ -12,5 +15,19 @@
   },
   "devDependencies": {
     "typescript": "^5.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/astra-pictures-ltd/astra-types/issues"
+  },
+  "homepage": "https://github.com/astra-pictures-ltd/astra-types#readme",
+  "description": "Shared typescript types for Astra applications",
+  "keywords": [
+    "astra",
+    "types",
+    "typescript"
+  ],
+  "license": "ISC",
+  "publishConfig": {
+    "@astrapictures:registry": "https://npm.pkg.github.com"
   }
 }
