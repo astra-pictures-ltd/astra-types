@@ -8,13 +8,18 @@
   },
   "author": "Astra TV <developer@astratvafrica.com>",
   "scripts": {
-    "build": "yarn tsc"
+    "build": "yarn tsc",
+    "lint": "yarn eslint src/",
+    "test": "yarn lint"
   },
   "dependencies": {
     "@tsed/mongoose": "^7.20.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.3"
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6"
   },
   "bugs": {
     "url": "https://github.com/astra-pictures-ltd/astra-types/issues"

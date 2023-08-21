@@ -14,7 +14,7 @@ export interface OptionData {
   [Options.DISCOUNT]?: OptionDiscount[]
 }
 
-export type OptionType = {
+export type OptionType<T = unknown> = {
   name: Options
-  value: any
+  value: T
 }
