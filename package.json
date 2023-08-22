@@ -1,6 +1,6 @@
 {
-  "name": "@astrapictures/types",
-  "version": "1.1.3",
+  "name": "@astra-pictures-ltd/types",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -11,9 +11,6 @@
     "build": "yarn tsc",
     "lint": "yarn eslint src/",
     "test": "yarn lint"
-  },
-  "dependencies": {
-    "@tsed/mongoose": "^7.20.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.4.1",
@@ -31,5 +28,11 @@
     "types",
     "typescript"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@astra-pictures-ltd"
+  },
+  "dependencies": {
+    "@tsed/mongoose": "^7.34.6"
+  }
 }
