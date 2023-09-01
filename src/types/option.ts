@@ -27,7 +27,7 @@ export const OptionsMerged = {
   ...OptionsFeaturedContent,
 }
 
-export type Options = OptionsFeaturedContent | OptionsBrevo | OptionsOther
+export type Options = OptionsFeaturedContent & OptionsBrevo & OptionsOther
 
 export type OptionDiscount = {
   code: number
