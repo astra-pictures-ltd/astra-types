@@ -21,7 +21,13 @@ export enum OptionsOther {
   DISCOUNT = 'discount',
 }
 
-export type Options = OptionsFeaturedContent & OptionsBrevo & OptionsOther
+export const Options = {
+  ...OptionsBrevo,
+  ...OptionsOther,
+  ...OptionsFeaturedContent,
+}
+
+export type OptionsMerged = OptionsFeaturedContent | OptionsBrevo | OptionsOther
 
 export type OptionDiscount = {
   code: number
