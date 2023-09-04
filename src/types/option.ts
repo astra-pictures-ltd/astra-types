@@ -27,7 +27,7 @@ export const OptionsMerged = {
   ...OptionsFeaturedContent,
 }
 
-export type Options = OptionsFeaturedContent & OptionsBrevo & OptionsOther
+export type Options = OptionsFeaturedContent | OptionsBrevo | OptionsOther
 
 export type OptionDiscount = {
   code: number
@@ -40,4 +40,13 @@ export interface OptionData {
 export type OptionType<T = unknown> = {
   name: Options
   value: T
+}
+
+export enum AstraEvents {
+  USER_SIGNUP = 'user_signup',
+  SUBSCRIPTION = 'subscription',
+  TICKET_PURCHASE = 'ticket_purchase',
+  SUBSCRIPTION_ERROR = 'subscription_error',
+  USER_AUTHENTICATED = 'user_authenticated',
+  TICKET_PURCHASE_ERROR = 'ticket_purchase_error',
 }
