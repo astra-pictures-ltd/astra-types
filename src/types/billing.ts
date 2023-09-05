@@ -148,4 +148,5 @@ export type UserSubscription = {
 export type PendingPayment = {
   plan?: string
   amount: string | number
+  status: TransactionStatus.PENDING
 }
