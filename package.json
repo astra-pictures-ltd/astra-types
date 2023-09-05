@@ -1,6 +1,7 @@
 {
   "name": "@astra-pictures-ltd/types",
   "version": "1.2.8",
+  "private": true,
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
       [
         "@semantic-release/github",
         {
