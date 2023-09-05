@@ -145,8 +145,8 @@ export type UserSubscription = {
   lastPaymentDate: Date
 }
 
-export type PendingPayment = {
+export interface PendingPayment {
+  url?: string
   plan?: string
-  amount: string | number
-  status: TransactionStatus.PENDING
+  amount: string
 }
