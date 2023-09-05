@@ -1,5 +1,4 @@
 import { User } from './user'
-import { PageMetadata } from './meta'
 import { MinimalContent } from './content'
 
 export type Card = {
@@ -94,23 +93,12 @@ export interface SubscriptionList {
   customer?: User
 }
 
-export interface PaystackBillingList<T> {
-  data: T[]
-  meta: PageMetadata
-}
-
 export interface TransactionList {
   status: string
-  title: string
+  title?: string
   amount: number
   currency: string
   date: string
-  channel: string
-}
-
-export type SubscriptionPaginatedList = {
-  data: SubscriptionList[]
-  meta: PageMetadata
 }
 
 export enum TransactionType {
@@ -155,4 +143,9 @@ export type UserSubscription = {
   cancelledAt: Date
   nextPaymentDate: Date
   lastPaymentDate: Date
+}
+
+export type PendingPayment = {
+  plan?: string
+  amount: string | number
 }
