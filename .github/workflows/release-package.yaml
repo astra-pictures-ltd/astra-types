@@ -31,6 +31,8 @@ jobs:
       - run: npm ci
       - name: Build module
         run: npm run build
-      - run: npm publish
+      - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: npx semantic-release
