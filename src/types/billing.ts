@@ -149,4 +149,5 @@ export interface PendingPayment {
   url?: string
   plan?: string
   amount: string
+  status: TransactionStatus.PENDING
 }
