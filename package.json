@@ -1,6 +1,5 @@
 {
   "name": "@astra-pictures-ltd/types",
-  "private": true,
   "main": "dist/index.js",
   "repository": {
     "type": "git",
