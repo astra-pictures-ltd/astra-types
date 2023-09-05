@@ -8,9 +8,9 @@
   },
   "author": "Astra TV <developer@astratvafrica.com>",
   "scripts": {
-    "build": "yarn tsc",
-    "lint": "yarn eslint src/",
-    "test": "yarn lint",
+    "build": "tsc",
+    "lint": "eslint src/",
+    "test": "npm run lint",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
