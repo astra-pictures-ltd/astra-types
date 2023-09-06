@@ -49,4 +49,5 @@ export enum AstraEvents {
   SUBSCRIPTION_ERROR = 'subscription_error',
   USER_AUTHENTICATED = 'user_authenticated',
   TICKET_PURCHASE_ERROR = 'ticket_purchase_error',
+  SUBSCRIPTION_RENEWAL_NOTICE = 'subscription_renewal_notice'
 }
