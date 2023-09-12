@@ -113,6 +113,7 @@ export enum TransactionStatus {
   REFUNDED = 'refunded',
   PROCESSING = 'processing',
   SUCCESSFUL = 'successful',
+  UNRECOGNIZED = 'unrecognized',
 }
 
 export enum PaymentProvider {
