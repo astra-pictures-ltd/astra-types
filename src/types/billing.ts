@@ -103,8 +103,8 @@ export interface TransactionList {
 
 export enum TransactionType {
   SUBSCRIPTION = 'subscription',
+  UNRECOGNIZED = 'unrecognized',
   TICKET_PURCHASE = 'ticket_purchase',
-  INITIAL_CARD_CHARGE = 'inital_card_charge',
 }
 
 export enum TransactionStatus {
@@ -113,7 +113,6 @@ export enum TransactionStatus {
   REFUNDED = 'refunded',
   PROCESSING = 'processing',
   SUCCESSFUL = 'successful',
-  UNRECOGNIZED = 'unrecognized',
 }
 
 export enum PaymentProvider {
