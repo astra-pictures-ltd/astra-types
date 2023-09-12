@@ -98,8 +98,8 @@ export interface TransactionList {
   title?: string
   amount: string
   date: string
-  type?: TransactionType,
-  planName?: string
+  type: string
+  discount?: string
 }
 
 export enum TransactionType {
