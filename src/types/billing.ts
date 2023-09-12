@@ -115,6 +115,8 @@ export enum TransactionStatus {
   SUCCESSFUL = 'successful',
 }
 
+export type SubscriptionPlanInterval = 'hourly' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'biannually' | 'annually'
+
 export enum PaymentProvider {
   PAYSTACK = 'paystack',
 }
