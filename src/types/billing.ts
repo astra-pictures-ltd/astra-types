@@ -96,9 +96,10 @@ export interface SubscriptionList {
 export interface TransactionList {
   status: string
   title?: string
-  amount: number
-  currency: string
+  amount: string
   date: string
+  type?: TransactionType,
+  planName?: string
 }
 
 export enum TransactionType {
