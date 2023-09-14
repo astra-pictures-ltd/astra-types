@@ -41,14 +41,3 @@ export type OptionType<T = unknown> = {
   name: Options
   value: T
 }
-
-export enum AstraEvents {
-  USER_SIGNUP = 'user_signup',
-  TICKET_PURCHASE = 'ticket_purchase',
-  NEW_SUBSCRIPTION = 'new_subscription',
-  SUBSCRIPTION_RENEW = 'subscription_renew',
-  USER_AUTHENTICATED = 'user_authenticated',
-  SUBSCRIPTION_DISABLED = 'subscription_disabled',
-  TICKET_PURCHASE_ERROR = 'ticket_purchase_error',
-  SUBSCRIPTION_RENEWAL_NOTICE = 'subscription_renewal_notice'
-}
