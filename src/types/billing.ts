@@ -106,6 +106,7 @@ export enum TransactionType {
   SUBSCRIPTION = 'subscription',
   UNRECOGNIZED = 'unrecognized',
   TICKET_PURCHASE = 'ticket_purchase',
+  SUBSCRIPTION_CREATED = 'subscription_created',
 }
 
 export enum TransactionStatus {
