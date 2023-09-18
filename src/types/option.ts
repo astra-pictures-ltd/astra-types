@@ -4,10 +4,10 @@ export enum OptionsBrevo {
   BREVO_ADMIN_INVITE = 'brevo_admin_invite',
   BREVO_VERIFY_ACCOUNT = 'brevo_verify_account',
   BREVO_TICKET_PURCHASE = 'brevo_ticket_purchase',
-  BREVO_PREMEIRE_REMINDER = 'brevo_premiere_reminder',
+  BREVO_PREMIERE_REMINDER = 'brevo_premiere_reminder',
   BREVO_SUBSCRIPTION_RENEW = 'brevo_subscription_renew',
-  BREVO_SUBSCRIPTION_EXPIRED = 'brevo_subscription_expired',
-  BREVO_SUBSCRIPTION_REMIDER = 'brevo_subscription_reminder',
+  BREVO_SUBSCRIPTION_REMINDER = 'brevo_subscription_reminder',
+  BREVO_SUBSCRIPTION_TERMINATED = 'brevo_subscription_TERMINATED',
 }
 /** Featured contents */
 export enum OptionsFeaturedContent {
