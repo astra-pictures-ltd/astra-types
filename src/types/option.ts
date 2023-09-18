@@ -7,7 +7,7 @@ export enum OptionsBrevo {
   BREVO_PREMIERE_REMINDER = 'brevo_premiere_reminder',
   BREVO_SUBSCRIPTION_RENEW = 'brevo_subscription_renew',
   BREVO_SUBSCRIPTION_REMINDER = 'brevo_subscription_reminder',
-  BREVO_SUBSCRIPTION_TERMINATED = 'brevo_subscription_TERMINATED',
+  BREVO_SUBSCRIPTION_TERMINATED = 'brevo_subscription_terminated',
 }
 /** Featured contents */
 export enum OptionsFeaturedContent {
