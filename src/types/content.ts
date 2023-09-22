@@ -153,6 +153,7 @@ export type ContentSearchParam = {
 export interface OrderedItem {
   title: string
   order: number
+  isArchived?: boolean
 }
 
 export interface ContentEpisode extends OrderedItem {
