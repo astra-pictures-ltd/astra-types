@@ -141,3 +141,15 @@ export type ContentSearchParam = {
   query?: string
   category?: string
 }
+
+export interface OrderedItem {
+  title: string
+  order: number
+}
+
+export interface ContentEpisode extends OrderedItem {
+  id: string 
+}
+export interface ContentSeries extends OrderedItem {
+  episodes: ContentEpisode[]
+}
