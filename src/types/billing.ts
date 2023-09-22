@@ -1,53 +1,6 @@
 import { User } from './user'
 import { MinimalContent } from './content'
 
-export type Card = {
-  id?: string
-  last4?: string
-  brand?: CardBrand
-}
-
-export enum CardStatus {
-  OTP = 'otp',
-  PIN = 'pin',
-  '3D' = '3d',
-  ERROR = 'error',
-  SUCCESS = 'success',
-}
-
-export enum CardBrand {
-  VISA = 'visa',
-  VERVE = 'verve',
-  MASTERCARD = 'mastercard',
-}
-
-export interface AddCardResponse extends Card {
-  message?: string
-  reference?: string
-  status: CardStatus
-  isReusable?: boolean
-}
-
-export type AddCardData = {
-  number: string
-  cvv: string
-  pin?: string
-  otp?: string
-  month: string
-  year: string
-  reference?: string
-}
-
-export type AddCardPinData = {
-  reference: string
-  pin: string
-}
-
-export type ChargeCard = {
-  id: string
-  userId: string
-}
-
 export interface SubscriptionPlan {
   name: string
   code: string
