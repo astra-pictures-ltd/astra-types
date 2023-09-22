@@ -160,5 +160,5 @@ export interface ContentEpisode extends OrderedItem {
   contentID: string 
 }
 export interface ContentSeries extends OrderedItem {
-  episodes: ContentEpisode[]
+  episodes?: ContentEpisode[]
 }
