@@ -19,11 +19,19 @@ export enum ContentType {
   TVSHOW = 'tv_show',
 }
 
+export enum ContentTypeAdmin {
+  EPISODE = 'episode',
+}
+
 export enum ContentStatus {
   DRAFT = 'draft',
   ARCHIVE = 'archive',
   PUBLISHED = 'published',
   COMING_SOON = 'coming_soon',
+}
+
+export enum ContentStatusAdmin {
+  ORPHANED = 'orphaned'
 }
 
 export type ContentDuration = {
