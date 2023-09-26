@@ -17,6 +17,7 @@ export enum ContentCrew {
 export enum ContentType {
   MOVIE = 'movie',
   TVSHOW = 'tv_show',
+  EPISODE = 'episode',
 }
 
 export enum ContentTypeAdmin {
