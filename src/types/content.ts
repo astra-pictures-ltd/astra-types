@@ -152,7 +152,6 @@ export type ContentSearchParam = {
 }
 
 export interface OrderedItem {
-  title: string
   order: number
   isArchived?: boolean
 }
@@ -161,6 +160,7 @@ export interface ContentEpisode extends OrderedItem {
   id: string 
 }
 export interface ContentSeries extends ContentEpisode {
+  title: string
   contentId: string
   episodes?: ContentEpisode[]
 }
