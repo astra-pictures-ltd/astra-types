@@ -158,9 +158,9 @@ export interface OrderedItem {
 
 export interface ContentEpisode extends OrderedItem {
   id: string 
+  title: string
 }
 export interface ContentSeries extends ContentEpisode {
-  title: string
   contentId: string
   episodes?: ContentEpisode[]
 }
