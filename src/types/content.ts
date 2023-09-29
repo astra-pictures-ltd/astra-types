@@ -100,6 +100,7 @@ export interface SingleContent extends BaseContent {
   isInWatchList?: boolean
   isInFavoriteList?: boolean
   premieres: PremiereItem[]
+  seasons?: ContentSeries[]
 }
 
 export type MinimalContent = {
