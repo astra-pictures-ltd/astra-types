@@ -59,12 +59,13 @@ export type ContentPlaybackURL = {
 export interface BaseContent {
   id: string
   title: string
+  subtitle?: string
   tags: string[]
   excerpt: string
-  access?: string
   niceTitle?: string
   description: string
   trailer_url?: string
+  access?: ContentAccess
   duration: ContentDuration | string
 }
 
