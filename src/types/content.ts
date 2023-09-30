@@ -56,6 +56,18 @@ export type ContentPlaybackURL = {
   [PlaybackQuality.STANDARD]?: string
 }
 
+export type ContentTicket = {
+  id: string
+  date: Date
+  amount: string
+  originalAmount?: string
+  currency: string
+  hasPurchased?: boolean
+  hasElapsed?: boolean
+  purchaseRef?: string
+  isVerified?: boolean
+  onClick: () => void
+}
 export interface BaseContent {
   id: string
   title: string
@@ -100,8 +112,8 @@ export interface SingleContent extends BaseContent {
   isPlayable?: boolean
   isInWatchList?: boolean
   isInFavoriteList?: boolean
-  premieres: PremiereItem[]
-  seasons?: ContentSeries[]
+  premieres: ContentTicket[]
+  seasons?: ContentSeriesResolved[]
 }
 
 export type MinimalContent = {
