@@ -1,6 +1,15 @@
 import { ObjectID } from '@tsed/mongoose'
 import { UploadedItem } from './media'
 
+export interface IDTitle {
+  id: string
+  title: string
+}
+
+export interface ContentSeasonsIntercepted extends IDTitle {
+  episodes: IDTitle[]
+}
+
 export enum PlaybackQuality {
   LOW = 'low',
   HIGH = 'high',
@@ -66,7 +75,6 @@ export type ContentTicket = {
   hasElapsed?: boolean
   purchaseRef?: string
   isVerified?: boolean
-  onClick: () => void
 }
 export interface BaseContent {
   id: string
@@ -82,7 +90,6 @@ export interface BaseContent {
 }
 
 export interface FeaturedContent extends ContentList {
-  logo?: UploadedItem
   thumbnail_horizontal?: UploadedItem
   thumbnail_vertical?: UploadedItem
   banner?: UploadedItem
@@ -93,9 +100,7 @@ export interface FeaturedContent extends ContentList {
   isInWatchList?: boolean
 }
 
-export type ContentList = {
-  id: string
-  title: string
+export interface ContentList extends IDTitle {
   tags: string[]
   excerpt?: string
   access: ContentAccess
@@ -103,8 +108,8 @@ export type ContentList = {
 }
 export interface SingleContent extends BaseContent {
   year: string
+  type?: ContentType
   rating: string
-  logo?: UploadedItem
   banner: UploadedItem
   formattedDuration: string
   thumbnail_vertical?: UploadedItem
@@ -112,13 +117,12 @@ export interface SingleContent extends BaseContent {
   isPlayable?: boolean
   isInWatchList?: boolean
   isInFavoriteList?: boolean
-  premieres: ContentTicket[]
-  seasons?: ContentSeriesResolved[]
+  premieres?: ContentTicket[]
+  seasons?: ContentSeasonsIntercepted[]
+  seasonID: string
 }
 
-export type MinimalContent = {
-  id: string
-  title: string
+export interface MinimalContent extends IDTitle {
   excerpt: string
 }
 
@@ -153,10 +157,7 @@ export enum ContentAccess {
 }
 
 export interface ContentGroupFormatted {
-  group: {
-    id: string
-    title: string
-  }
+  group: IDTitle
   items: ContentList[]
 }
 
@@ -170,10 +171,7 @@ export interface OrderedItem {
   isArchived?: boolean
 }
 
-export interface ContentEpisode extends OrderedItem {
-  id: string 
-  title: string
-}
+export type ContentEpisode = OrderedItem & IDTitle
 export interface ContentSeries extends ContentEpisode {
   episodes?: ContentEpisode[]
 }
